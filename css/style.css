@@ -1,0 +1,908 @@
+/* Push page content down so navbar-fixed-top doesn't cover it */
+body {
+  padding-top: 50px;
+  background-color: #e5e5e0;
+}
+
+/* Navbar Links Styling */
+.navbar-nav > li > a {
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+/* "OUR LOCATION" Button in Header */
+.navbar-nav .btn-location {
+  border: 1px solid #ffffff !important;
+  border-radius: 20px !important;
+  padding: 8px 18px !important; /* Overrides global padding */
+  margin-top: 18px !important;  /* Centers button vertically */
+  color: #ffffff !important;
+  display: inline-block !important;
+}
+
+/* Optional: Add hover fill effect */
+.navbar-nav .btn-location:hover {
+  background-color: #ffffff !important;
+  color: #337ab7 !important;
+}
+
+/* Centered Social Icons directly under Header */
+/* Social Network Icons Container */
+.social-networks {
+  margin-top: 15px;
+}
+
+/* Make social network icons circular with a white border */
+.social-networks a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  color: #ffffff;
+  font-size: 14px;
+  margin: 0 4px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+/* Hover state: background turns deepskyblue */
+.social-networks a:hover {
+  background-color: deepskyblue;
+  border-color: deepskyblue;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* Force navigation items to float right */
+.navbar-nav {
+  float: right !important;
+  margin-right: 0;
+}
+
+.navbar-nav > li {
+  float: left;
+}
+
+/* Uppercase styling to match target output */
+.navbar-nav > li > a {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 12px;
+}
+
+/* Push body down past fixed navbar */
+body {
+  padding-top: 50px;
+}
+
+/* Background Image & Slider Section Setup */
+.slider {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../img/slider.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+/* Dark transparent overlay to center elements */
+.slider-overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Device Icons (Apple, Android, Windows) */
+.icons {
+  margin-bottom: 20px;
+}
+
+.icons i {
+  color: #ffffff;
+  font-size: 32px;
+  margin: 0 10px;
+}
+
+/* Buttons Styling */
+.cta-div {
+  margin-bottom: 20px;
+}
+
+.btn1 {
+  display: inline-block;
+  padding: 10px 24px;
+  margin: 0 6px;
+  border: 2px solid #ffffff;
+  border-radius: 20px;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.btn1:hover {
+  background-color: #ffffff;
+  color: #333333;
+  text-decoration: none;
+}
+
+/* Bottom Social Links */
+.social-networks a {
+  color: #337ab7;
+  font-size: 16px;
+  margin: 0 5px;
+  text-decoration: none;
+}
+
+/* Base Button Styling */
+.btn1 {
+  display: inline-block;
+  padding: 10px 24px;
+  margin: 0 6px;
+  border: 2px solid #ffffff;
+  border-radius: 20px;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease; /* Smooth color transition on hover */
+}
+
+/* Orange hover state for CONTACT US */
+.btn-contact:hover {
+  background-color: #ff7f27; /* Orange fill */
+  border-color: #ff7f27;     /* Orange border */
+  color: #ffffff;            /* Keep text white */
+  text-decoration: none;
+}
+
+/* Blue hover state for LEARN TODAY */
+.btn-learn:hover {
+  background-color: #337ab7;   /* Blue fill */
+  border-color: #337ab7;       /* Blue border */
+  color: #ffffff;              /* Keep text white */
+  text-decoration: none;
+}
+
+/* Change Navigation Bar Background to Blue */
+.navbar, 
+.navbar-inverse, 
+.navbar-default {
+  background-color: #337ab7 !important;
+  border-color: transparent !important;
+}
+
+/* Ensure Logo and Nav Links Stay White */
+.navbar-brand,
+.navbar-nav > li > a {
+  color: #ffffff !important;
+}
+
+/* Navigation Link Hover State */
+.navbar-nav > li > a:hover {
+  color: #dddddd !important;
+}
+
+/* 1. Increase overall navbar height */
+.navbar {
+  min-height: 75px !important;
+}
+
+/* 2. Vertically center the COX logo */
+.navbar-brand {
+  height: 75px !important;
+  line-height: 45px !important;
+  font-size: 22px !important;
+  font-weight: bold !important;
+}
+
+/* 3. Increase link padding to center menu items in taller header */
+.navbar-nav > li > a {
+  padding-top: 28px !important;
+  padding-bottom: 28px !important;
+}
+
+/* 4. Adjust body padding if fixed top navbar is overlapping content */
+body {
+  padding-top: 75px !important;
+}
+/* Animated Text & Cursor Styling */
+.slider .text, .slider .typed-cursor {
+    display: inline;
+    font-size: 50px;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.primary {
+    color: orangered;
+}
+
+.typed-cursor {
+    opacity: 1;
+    animation: blink 0.7s infinite;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+}
+
+/* Keyframes for Cursor Blinking */
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@-webkit-keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@-moz-keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/*===============================================
+               Services styles
+===============================================*/
+
+.service-area {
+    margin-top: 30px;
+}
+
+.service-area p {
+    margin-bottom: -5px;
+}
+
+.service-wrap {
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    overflow: hidden;
+    padding: 25px 35px;
+    position: relative;
+    transition: all 0.5s ease 0s;
+    z-index: 9;
+    margin-top: 20px;
+}
+
+.service-wrap::before, .service-wrap::after {
+    content: "";
+    height: 300%;
+    position: absolute;
+    transform: rotate(45deg);
+    width: 120%;
+    z-index: -9;
+    transition: all 0.5s;
+    opacity: 0;
+    background: #34495e;
+}
+
+.service-wrap::before {
+    top: -37px;
+    left: 100%;
+}
+
+.service-wrap:hover::before {
+    left: -27px;
+    opacity: 1;
+}
+
+.service-wrap::after {
+    right: 100%;
+    bottom: -37px;
+}
+
+.service-wrap:hover::after {
+    right: -27px;
+    opacity: 1;
+}
+
+.service-wrap:hover {
+    color: white;
+}
+
+.service-wrap h3 {
+    color: white;
+}
+
+.service-wrap:hover h3 {
+    color: white;
+}
+
+.service-wrap:hover h3:after {
+    background-color: white;
+}
+
+.service-wrap:hover .service-icon i {
+    transform: rotate(360deg);
+}
+
+.service-wrap h3 {
+    font-size: 25px;
+    font-weight: 700;
+    padding-bottom: 15px;
+    position: relative;
+}
+
+.service-wrap p {
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+/*===============================================
+            Services styles Ends
+===============================================*/
+
+/*==================================
+        Work styles
+==================================*/
+
+.work {
+  margin-top: 25px;
+}
+
+.row.no-gutters [class*="col-"] {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.img-wrapper {
+  overflow: hidden;
+}
+
+.img-wrapper img {
+  transition: transform 0.5s ease;
+  width: 100%;
+}
+
+.img-wrapper img:hover {
+  transform: scale(1.5);
+  cursor: zoom-in;
+}
+
+/*==================================
+        Work style ends
+==================================*/
+/* =========================================
+   Team Styles
+========================================= */
+
+.team-member {
+  margin-top: 50px;
+  margin: 0 15px;
+}
+
+.team-member-info {
+  padding: 10px 0 30px 0;
+}
+
+h4.team-member-name {
+  font-size: 19px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding-top: 2px;
+}
+
+h4.team-member-designation {
+  color: #34c6d3;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-top: 5px;
+  text-transform: capitalize;
+  font-style: italic;
+}
+
+.social-list {
+  padding-left: 0;
+}
+
+.social-list li {
+  list-style: none;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  margin-right: 6px;
+  margin-top: 10px;
+}
+
+.social-list i {
+  font-size: 17px;
+}
+
+.icon-gray i {
+  color: #64707b;
+}
+
+/* Custom Active Dot Color */
+.owl-theme .owl-dots .owl-dot.active span, 
+.owl-theme .owl-dots .owl-dot:hover span {
+  background: #34c6d3 !important;
+}
+
+/* Orange Footer Banner */
+.bottom-orange-banner {
+  width: 100%;
+  height: 60px;
+  background-color: #e67e22;
+  margin-top: 40px;
+}
+/* ===========================================
+   Basic Properties
+   =========================================== */
+body {
+  overflow-x: hidden;
+  height: 2000px;
+}
+
+/* ===========================================
+   Testimonials / Reviews Section Styles
+   =========================================== */
+
+.testimonials {
+    background: linear-gradient(rgba(224, 119, 34, 0.85), rgba(224, 119, 34, 0.85)), url("../img/reviews-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    padding-top: 80px;
+    padding-bottom: 150px;
+}
+
+.testimonials .carousel-inner img {
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    border: 3px solid white;
+    padding: 5px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+
+.testimonials .carousel-indicators {
+    bottom: -60px;
+}
+
+.testimonials .border-bottom {
+    width: 40px;
+    height: 2px;
+    background-color: white;
+    margin: 0 auto;
+}
+
+.testimonials .carousel-inner p {
+    font-size: 17px;
+    font-weight: normal;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    color: white;
+}
+
+.testimonials h2,
+.testimonials h4 {
+    color: white;
+}
+/*============================================
+       FAQs style Ends
+============================================*/
+
+/*=============================================
+             Video style Starts
+=============================================*/
+
+.video-area
+{
+    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.9)),url(../img/videobg.jpg);
+    padding-top: 180px;
+    padding-bottom: 180px;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    overflow: hidden;
+    margin-top: 40px;
+    background-attachment: fixed;
+}
+
+.play
+{
+    background: #fff url(../img/playbutton.png) no-repeat 60% 50%;
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-top: 70px;
+    margin-bottom: 40px;
+    box-shadow: 0px 0px 0px 20px rgba(0,167,221,0.5);
+    -webkit-box-shadow: 0px 0px 0px 20px rgba(0,167,221,0.5);
+    -moz-box-shadow: 0px 0px 0px 20px rgba(0,167,221,0.5);
+    -o-box-shadow: 0px 0px 0px 20px rgba(0,167,221,0.5);
+    transition: all .4s ease-in;
+    -webkit-transition: all .4s ease-in;
+    -moz-transition: all .4s ease-in;
+    -o-transition: all .4s ease-in;
+    -ms-transition: all .4s ease-in;
+}
+
+.play:hover
+{
+    box-shadow: 0px 0px 15px 20px rgba(0,84,111,0.5);
+    -webkit-box-shadow: 0px 0px 15px 20px rgba(0,84,111,0.5);
+    -moz-box-shadow: 0px 0px 15px 20px rgba(0,84,111,0.5);
+}
+
+.video-container
+{
+    position: relative;
+    padding-bottom: 54.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+    margin-top: -130px;
+    display: none;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Header Navigation Styling */
+header {
+    background-color: #347ab6;
+    padding: 15px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 8px 14px;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    color: #d1e5f7;
+}
+
+/* Active State for BLOGS */
+nav a.active,
+nav a:focus {
+    background-color: #34495e;
+    color: #ffffff;
+}
+
+/* Pill Button for OUR LOCATION */
+nav a.btn-location {
+    border: 1px solid #ffffff;
+    border-radius: 20px;
+}
+
+nav a.btn-location:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Blog Section Layout */
+.latest-news-area {
+    margin-top: 40px;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+.col-xs-12 {
+    width: 100%;
+    padding: 0 15px;
+}
+
+.col-md-4 {
+    width: 33.333%;
+    padding: 0 15px;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+    .col-md-4 {
+        width: 100%;
+    }
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.section-title h2 {
+    font-size: 28px;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.sub-heading {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.latest-news-wrap {
+    box-shadow: 0px 3px 10px rgba(0,0,0,.1);
+    background: #fff;
+}
+
+/* Image Container & Fixes */
+/* Image Container Base */
+.news-img {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 220px;
+}
+
+.news-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    position: relative;
+    z-index: 1;
+}
+
+/* Dark Grey Hover Overlay */
+.news-img:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent dark overlay */
+    opacity: 0;
+    transform: scale(0.8);
+    transition: all 0.4s ease-in-out;
+    z-index: 2; /* Sits above the image */
+    pointer-events: none;
+}
+
+/* Hover State - Triggers Dark Overlay */
+.latest-news-wrap:hover .news-img:before {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* Orange Date Badge Fix */
+.deat {
+    background: #f89406;
+    height: 70px;
+    width: 70px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    padding: 10px;
+    z-index: 3; /* Always stays on top of hover overlay */
+}
+/* Date Badge */
+.deat {
+    background: #f89406 none repeat scroll 0 0;
+    height: 70px;
+    left: 0;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 70px;
+    padding: 10px;
+    z-index: 3;
+}
+
+.deat span {
+    display: block;
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+/* Content Area */
+.news-content {
+    padding: 20px;
+    margin-left: 3px;
+}
+
+.news-content i {
+    font-size: 18px;
+    display: inline-block;
+}
+
+.news-content .fa {
+    padding: 10px 10px;
+    cursor: pointer;
+}
+
+.news-content .fa-facebook { color: #3b5995; }
+.news-content .fa-twitter { color: #0084b4; }
+.news-content .fa-linkedin { color: #0077b5; }
+.news-content .fa-youtube { color: red; }
+.news-content .fa-whatsapp { color: #34af23; }
+
+.news-content p {
+    margin-bottom: 15px;
+    text-align: justify;
+    margin-top: 20px;
+    color: #555;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.news-content a {
+    font-size: 14px;
+    background-color: #34495e;
+    padding: 10px 20px;
+    color: white;
+    display: inline-block;
+    text-decoration: none;
+    transition: all 0.5s ease-in;
+}
+
+.news-content a:hover {
+    font-size: 14px;
+    border: 1px solid #34495e;
+    border-top-right-radius: 20px;
+    background-color: transparent;
+    color: #34495e;
+    margin-right: 0;
+    text-decoration: none;
+}
+
+/*==================================================
+        Counter stat style starts
+==================================================*/
+
+.stat
+{
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.6)),url(../img/cover-bg-1.jpg);
+    background-position: center;
+    padding-top: 180px;
+    padding-bottom: 200px;
+    color: white;
+    background-attachment: fixed;
+    margin-top: 100px;
+}
+
+.stat i
+{
+    font-size: 85px;
+}
+
+.stat-items h2
+{
+    font-weight: bolder;
+    font-size: 42px;
+    color: deepskyblue;
+}
+
+.stat p
+{
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/*==================================================
+        Counter stat style Ends
+==================================================*/
+/* Container Wrapper */
+.maps-wrapper {
+  width: 100%;
+}
+
+/* Contact Info Banner */
+.contact-info-banner {
+  background-color: #008080; /* Teal accent color */
+  color: #ffffff;
+  padding: 30px 20px;
+}
+
+.info-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+.info-box {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon-circle {
+  width: 42px;
+  height: 42px;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.icon-circle i {
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.info-box p {
+  font-size: 13px;
+  line-height: 1.5;
+  color: #e0f2f1;
+}
+
+/* Map iFrame Styling */
+.maps {
+  width: 100%;
+  overflow: hidden;
+}
+
+.maps iframe {
+  width: 100%;
+  height: 500px;
+  border: 0;
+  display: block;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .info-grid {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
